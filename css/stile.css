@@ -1656,28 +1656,26 @@ SEZIONI GENERALI
 
 /* =========================================================
    ABOUT
-========================================================= */
+   ========================================================= */
 
 .about-final {
   margin-top: 50px !important;
 
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 30px !important;
-  line-height: 1.1 !important;
+  line-height: 1.25 !important;
 
   color: var(--coral);
 }
 
-
 /* =========================================================
    CONTATTI
-========================================================= */
+   ========================================================= */
 
 .contact-section {
   position: relative;
   min-height: 720px;
-
   padding-bottom: 150px;
+  overflow: hidden;
 }
 
 .contact-content {
@@ -1688,74 +1686,270 @@ SEZIONI GENERALI
   z-index: 3;
 
   display: grid;
-  grid-template-columns: minmax(300px, 0.8fr) minmax(320px, 1fr);
-  gap: 80px;
+  grid-template-columns: minmax(300px, .8fr) minmax(420px, 1fr);
+  gap: 90px;
+  align-items: start;
 }
 
-.contact-content h2 {
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.contact-intro {
+  padding-top: 5px;
+}
+
+.contact-intro h2 {
+  margin: 0;
+
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(60px, 8vw, 110px);
   font-weight: 400;
-  line-height: 0.88;
-  letter-spacing: -0.055em;
+  line-height: .88;
+  letter-spacing: -.055em;
+
+  color: var(--text-dark);
 }
 
-.contact-text {
-  max-width: 600px;
-  padding-top: 12px;
-}
+.contact-intro p {
+  max-width: 470px;
+  margin-top: 34px;
 
-.contact-text p {
-  padding: 17px 0;
-
-  border-bottom: 1px solid var(--border-light);
-
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.65;
 
   color: #565B61;
+}
+
+.contact-intro p + p {
+  margin-top: 12px;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.contact-form {
+  position: relative;
+  z-index: 4;
+
+  width: 100%;
+  max-width: 650px;
+  padding-top: 8px;
+}
+
+
+/* =========================================================
+   FIELDSET / OPZIONI
+   ========================================================= */
+
+.contact-fieldset {
+  margin: 0;
+  padding: 0 0 34px;
+
+  border: 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.contact-fieldset legend {
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+
+  color: var(--text-dark);
+}
+
+.contact-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-option {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.contact-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-option span {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 43px;
+  padding: 10px 17px;
+
+  border: 1px solid rgba(17, 21, 28, .18);
+  border-radius: 100px;
+
+  font-size: 13px;
+  line-height: 1.2;
+  color: #565B61;
+
+  background: rgba(255, 255, 255, .22);
 
   transition:
-    padding-left .4s cubic-bezier(.16,1,.3,1),
-    color .3s ease;
+    color .25s ease,
+    background .25s ease,
+    border-color .25s ease,
+    transform .25s ease;
 }
 
-.contact-text p:hover {
-  padding-left: 8px;
+.contact-option:hover span {
+  border-color: rgba(17, 21, 28, .38);
+  color: var(--text-dark);
+  transform: translateY(-1px);
+}
+
+.contact-option input:checked + span {
+  border-color: var(--coral);
+  background: rgba(229, 143, 138, .12);
   color: var(--text-dark);
 }
 
-.contact-text p:first-child {
-  border-top: 1px solid var(--border-light);
+.contact-option input:focus-visible + span {
+  outline: 2px solid var(--coral);
+  outline-offset: 3px;
 }
 
-.contact-text .contact-final {
-  margin-top: 40px;
 
-  border: none;
+/* =========================================================
+   CAMPI
+   ========================================================= */
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 29px;
-  line-height: 1.15;
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contact-field label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 
   color: var(--text-dark);
 }
 
-.contact-button {
+.contact-field textarea,
+.contact-field input {
+  width: 100%;
+
+  border: 0;
+  border-bottom: 1px solid var(--border-light);
+  border-radius: 0;
+
+  background: transparent;
+
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+
+  color: var(--text-dark);
+
+  outline: none;
+
+  transition:
+    border-color .25s ease,
+    background .25s ease;
+}
+
+.contact-field textarea {
+  min-height: 125px;
+  padding: 16px 18px;
+
+  resize: vertical;
+
+  border: 1px solid rgba(17, 21, 28, .12);
+  border-radius: 10px;
+
+  background: rgba(17, 21, 28, .025);
+
+  box-shadow:
+    inset 0 2px 7px rgba(17, 21, 28, .055),
+    inset 0 0 0 1px rgba(255, 255, 255, .28);
+
+  transition:
+    border-color .25s ease,
+    background .25s ease,
+    box-shadow .25s ease;
+}
+
+.contact-field textarea:focus {
+  border-color: rgba(229, 143, 138, .65);
+
+  background: rgba(255, 255, 255, .32);
+
+  box-shadow:
+    inset 0 2px 7px rgba(17, 21, 28, .04),
+    0 0 0 3px rgba(229, 143, 138, .08);
+
+  outline: none;
+}
+
+
+/* =========================================================
+   MESSAGGIO
+   ========================================================= */
+
+.contact-form > .contact-field {
+  margin-top: 30px;
+}
+
+
+/* =========================================================
+   NOME + EMAIL
+   ========================================================= */
+
+.contact-fields-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+
+  margin-top: 30px;
+}
+
+
+/* =========================================================
+   PULSANTE
+   ========================================================= */
+
+.contact-submit {
   display: inline-flex;
   align-items: center;
   gap: 14px;
 
-  margin-top: 15px;
-
+  margin-top: 38px;
   padding: 15px 0;
 
+  border: 0;
   border-bottom: 1px solid var(--text-dark);
 
+  background: transparent;
+
+  font: inherit;
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 700;
+  letter-spacing: .1em;
   text-transform: uppercase;
+
+  color: var(--text-dark);
+
+  cursor: pointer;
 
   transition:
     gap .25s ease,
@@ -1763,20 +1957,51 @@ SEZIONI GENERALI
     border-color .25s ease;
 }
 
-.contact-button span {
+.contact-submit span {
   font-size: 18px;
+  line-height: 1;
 }
 
-.contact-button:hover {
+.contact-submit:hover {
   gap: 19px;
   color: var(--coral);
   border-color: var(--coral);
 }
 
+.contact-submit:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 5px;
+}
+
+/* =========================================================
+   MESSAGGIO FORM
+   ========================================================= */
+
+.contact-form-message {
+  margin-top: 20px;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: var(--text-dark);
+}
+
+.contact-form-message.is-success {
+  color: #596B5E;
+}
+
+.contact-form-message.is-error {
+  color: #B45F5A;
+}
+
+.contact-submit:disabled {
+  opacity: .55;
+  cursor: wait;
+}
 
 /* =========================================================
    CONTACT LINES
-========================================================= */
+   ========================================================= */
 
 .contact-lines {
   position: absolute;
@@ -1789,13 +2014,14 @@ SEZIONI GENERALI
   height: 300px;
 
   pointer-events: none;
-  opacity: 0.55;
+  opacity: .55;
 
-  transform: translateX(calc(var(--scroll-shift) * .45));
-  transition: transform .12s linear;
+  z-index: 1;
 }
 
 .contact-lines svg {
+  display: block;
+
   width: 100%;
   height: 100%;
 }
@@ -1808,21 +2034,181 @@ SEZIONI GENERALI
 
   stroke: var(--coral);
 
+  /*
+    Le linee partono completamente nascoste.
+    L'animazione le disegna da sinistra verso destra.
+  */
   stroke-dasharray: 1400;
   stroke-dashoffset: 1400;
-
-  animation: contactLineDraw 2s 1s cubic-bezier(.16,1,.3,1) forwards;
 }
 
 .contact-lines path:nth-child(2) {
   stroke: var(--blue);
-  animation-delay: 1.15s;
 }
 
 .contact-lines path:nth-child(3) {
   stroke: var(--lavender);
-  opacity: 0.65;
-  animation-delay: 1.3s;
+  opacity: .65;
+}
+
+
+/* =========================================================
+   ANIMAZIONE LINEE
+   ========================================================= */
+
+.contact-section.is-visible .contact-lines path {
+  animation-name: contactLineDraw;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.16, 1, .3, 1);
+  animation-fill-mode: forwards;
+}
+
+.contact-section.is-visible .contact-lines path:nth-child(2) {
+  animation-delay: .15s;
+}
+
+.contact-section.is-visible .contact-lines path:nth-child(3) {
+  animation-delay: .3s;
+}
+
+
+@keyframes contactLineDraw {
+
+  from {
+    stroke-dashoffset: 1400;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+
+}
+
+
+/* =========================================================
+   RIDUZIONE MOVIMENTO
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .contact-lines path {
+    stroke-dashoffset: 0;
+    animation: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .contact-section {
+    min-height: auto;
+    padding-bottom: 110px;
+  }
+
+  .contact-content {
+    width: calc(100% - 32px);
+
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .contact-intro {
+    padding-top: 0;
+  }
+
+  .contact-intro h2 {
+    font-size: clamp(54px, 15vw, 78px);
+  }
+
+  .contact-intro p {
+    max-width: 560px;
+
+    margin-top: 28px;
+
+    font-size: 15px;
+  }
+
+  .contact-form {
+    max-width: none;
+    padding-top: 0;
+  }
+
+  .contact-fieldset {
+    padding-bottom: 28px;
+  }
+
+  .contact-options {
+    gap: 8px;
+  }
+
+  .contact-option span {
+    min-height: 41px;
+
+    padding: 9px 14px;
+
+    font-size: 12px;
+  }
+
+  .contact-fields-row {
+    grid-template-columns: 1fr;
+
+    gap: 27px;
+  }
+
+  .contact-form > .contact-field {
+    margin-top: 27px;
+  }
+
+  .contact-submit {
+    margin-top: 34px;
+  }
+
+  .contact-lines {
+    height: 220px;
+
+    bottom: -5px;
+
+    opacity: .4;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE PICCOLO
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .contact-content {
+    width: calc(100% - 32px);
+  }
+
+  .contact-intro h2 {
+    font-size: clamp(50px, 15vw, 68px);
+  }
+
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-option span {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .contact-field textarea {
+    min-height: 110px;
+  }
+
 }
 
 
