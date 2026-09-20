@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Anna Bianchi | Progetti web e digitali</title>
+  <title>Anna Bianchi | Siti web, e-commerce e presenza online</title>
 
   <meta
     name="description"
-    content="Progetti web e digitali per professionisti, piccole attività e realtà che vogliono costruire o migliorare la propria presenza online."
+    content="Anna Bianchi realizza siti web, e-commerce e soluzioni digitali per professionisti e piccole attività. WordPress, Shopify, SEO e presenza online."
   >
+
+  <meta name="robots" content="index, follow">
 
   <link rel="stylesheet" href="css/stile.css">
   <script src="js/script.js" defer></script>
@@ -17,798 +19,1091 @@
 
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
+  <header class="site-header">
+    <div class="header-inner">
 
-    <a href="#top" class="logo">Anna Bianchi</a>
-
-    <button
-      class="menu-toggle"
-      aria-label="Apri il menu"
-      aria-expanded="false"
-    >
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="main-nav" aria-label="Navigazione principale">
-      <a href="#progetti">Progetti</a>
-      <a href="#servizi">Servizi</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contatti">Contatti</a>
-    </nav>
-
-  </div>
-</header>
-
-
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-
-    <div class="hero-content">
-
-      <p class="hero-kicker">Progetti web e digitali</p>
-
-      <h1>
-        Dare forma alle idee,<br>
-        <em>online.</em>
-      </h1>
-
-      <p class="hero-description">
-        Progetti web e digitali per professionisti, piccole attività e realtà
-        che vogliono costruire o migliorare la propria presenza online.
-      </p>
-
-      <a href="#progetti" class="hero-link">
-        Scopri i progetti <span>→</span>
+      <a href="#top" class="logo" aria-label="Anna Bianchi - torna all'inizio">
+        Anna Bianchi
       </a>
 
-    </div>
-
-    <div class="hero-flow" aria-hidden="true">
-
-      <svg
-        viewBox="0 0 1000 700"
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Apri il menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
       >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
 
-        <path
-          class="flow-line flow-coral"
-          d="M 0 360 C 130 360, 190 355, 280 350 C 380 344, 410 330, 470 310 C 570 275, 650 290, 760 250 C 850 218, 925 230, 1000 190"
-        />
-
-        <path
-          class="flow-line flow-blue"
-          d="M 0 360 C 140 360, 205 365, 300 370 C 390 375, 430 400, 510 390 C 620 375, 665 315, 760 330 C 850 345, 920 305, 1000 285"
-        />
-
-        <path
-          class="flow-line flow-coral"
-          d="M 0 360 C 135 360, 210 350, 300 340 C 390 330, 450 300, 525 325 C 610 355, 670 405, 755 390 C 850 375, 915 410, 1000 385"
-        />
-
-        <path
-          class="flow-line flow-blue"
-          d="M 0 360 C 130 360, 210 370, 300 385 C 390 400, 450 450, 535 435 C 625 420, 685 355, 770 365 C 855 375, 920 450, 1000 455"
-        />
-
-        <path
-          class="flow-line flow-coral"
-          d="M 0 360 C 120 360, 200 345, 290 325 C 385 305, 445 275, 520 285 C 610 298, 680 350, 765 315 C 850 280, 920 320, 1000 300"
-        />
-
-        <path
-          class="flow-line flow-blue"
-          d="M 0 360 C 125 360, 200 375, 290 395 C 380 415, 450 470, 530 465 C 625 460, 690 410, 775 425 C 860 440, 925 510, 1000 520"
-        />
-
-        <path
-          class="flow-line flow-lavender"
-          d="M 0 360 C 145 360, 215 355, 310 355 C 405 355, 470 345, 550 365 C 650 390, 710 455, 800 440 C 875 425, 940 470, 1000 475"
-        />
-
-      </svg>
+      <nav
+        class="main-nav"
+        id="main-navigation"
+        aria-label="Navigazione principale"
+      >
+        <a href="#progetti">Progetti</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
 
     </div>
+  </header>
 
-  </section>
 
+  <main id="top">
 
-  <!-- INTRO -->
-  <section
-    class="section dark-section intro-section"
-    id="il-sito-giusto"
-  >
+    <!-- =====================================================
+    HERO
+    ====================================================== -->
 
-    <div class="section-label">Il sito giusto</div>
+    <section
+      class="hero"
+      id="home"
+      aria-labelledby="hero-title"
+    >
 
-    <div class="section-content split-content">
+      <div class="hero-content">
 
-      <h2>
-        Ti serve davvero<br>
-        un sito?
-      </h2>
+        <p class="hero-kicker">Progetti web e digitali</p>
 
-      <div class="large-text">
+        <h1 id="hero-title">
+          Dare forma alle idee,<br>
+          <em>online.</em>
+        </h1>
 
-        <p>
-          Forse sì.<br>
-          Ma non necessariamente quello che stai immaginando.
-        </p>
-
-        <p>
-          Per qualcuno è sufficiente una pagina chiara con servizi,
-          contatti e informazioni essenziali.
-        </p>
-
-        <p>
-          Per altri serve un sito più completo, un sistema di prenotazione
-          o un e-commerce.
-        </p>
-
-        <p>
-          Il punto non è avere un sito.
-          <strong>È capire cosa deve fare per la tua attività.</strong>
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- SERVIZI -->
-  <section
-    class="section light-section services-section"
-    id="servizi"
-  >
-
-    <div class="section-label">Cosa possiamo costruire</div>
-
-    <div class="section-content">
-
-      <h2>Da dove vuoi partire?</h2>
-
-      <div class="services-grid">
-
-        <article class="service-card">
-          <span class="service-number">01</span>
-          <span class="service-type">One page</span>
-
-          <h3>Una presenza semplice</h3>
-
-          <p>
-            Una pagina unica per presentare un'attività, un professionista,
-            un servizio o un progetto. Tutto quello che serve, in un unico posto.
-          </p>
-        </article>
-
-
-        <article class="service-card">
-          <span class="service-number">02</span>
-          <span class="service-type">Sito vetrina</span>
-
-          <h3>Un sito più completo</h3>
-
-          <p>
-            Più pagine per raccontare chi sei, cosa fai, i tuoi servizi,
-            i tuoi progetti e come contattarti. Una struttura che può crescere
-            insieme alla tua attività.
-          </p>
-        </article>
-
-
-        <article class="service-card">
-          <span class="service-number">03</span>
-          <span class="service-type">E-commerce</span>
-
-          <h3>Un modo semplice per vendere</h3>
-
-          <p>
-            Se vuoi vendere prodotti online, possiamo valutare una soluzione
-            e-commerce adatta al modo in cui lavori.
-          </p>
-        </article>
-
-
-        <article class="service-card">
-          <span class="service-number">04</span>
-          <span class="service-type">Prenotazioni</span>
-
-          <h3>I tuoi clienti devono poter prenotare</h3>
-
-          <p>
-            Un sito può diventare anche il punto di partenza per raccogliere
-            richieste e appuntamenti. La soluzione dipende dal tipo di attività
-            e da come vuoi gestire le prenotazioni.
-          </p>
-        </article>
-
-      </div>
-
-    </div>
-
-    <div class="section-lines section-lines-light" aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-  </section>
-
-
-  <!-- TECNOLOGIA -->
-  <section class="section dark-section technology-section">
-
-    <div class="section-label">La tecnologia</div>
-
-    <div class="section-content">
-
-      <h2>
-        WordPress, Shopify<br>
-        o una soluzione personalizzata?
-      </h2>
-
-      <p class="section-intro">
-        Non esiste una piattaforma giusta per tutti.
-      </p>
-
-      <div class="technology-list">
-
-        <article class="technology-item">
-          <div>
-            <span>WordPress</span>
-          </div>
-
-          <p>
-            Una soluzione flessibile per siti che hanno bisogno di contenuti,
-            pagine e possibilità di gestione nel tempo.
-          </p>
-        </article>
-
-
-        <article class="technology-item">
-          <div>
-            <span>Shopify</span>
-          </div>
-
-          <p>
-            Pensato soprattutto per chi vuole vendere online e avere
-            una piattaforma e-commerce strutturata e gestibile.
-          </p>
-        </article>
-
-
-        <article class="technology-item">
-          <div>
-            <span>Sviluppo personalizzato</span>
-          </div>
-
-          <p>
-            Quando il progetto ha esigenze specifiche e una soluzione
-            standard non è sufficiente.
-          </p>
-        </article>
-
-      </div>
-
-      <p class="technology-closing">
-        Partiamo da quello che ti serve, non dalla piattaforma.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- DOPO -->
-  <section class="section light-section after-section">
-
-    <div class="section-label">Cosa succede dopo</div>
-
-    <div class="section-content after-content">
-
-      <div class="after-heading">
-
-        <h2>
-          Il sito è online.<br>
-          E poi?
-        </h2>
-
-        <p class="after-intro">
-          Un sito ben fatto è un punto di partenza,
-          non necessariamente il punto di arrivo.
-        </p>
-
-      </div>
-
-
-      <div class="tools-list">
-
-        <div class="tool-item">
-          <strong>Dominio</strong>
-          <span>
-            Collegamento e configurazione del dominio.
-          </span>
-        </div>
-
-
-        <div class="tool-item">
-          <strong>Google Business Profile</strong>
-          <span>
-            Per rendere più facile trovare la tua attività su Google.
-          </span>
-        </div>
-
-
-        <div class="tool-item">
-          <strong>Google Analytics</strong>
-          <span>
-            Per raccogliere dati sulle visite e capire come viene utilizzato il sito.
-          </span>
-        </div>
-
-
-        <div class="tool-item">
-          <strong>Search Console</strong>
-          <span>
-            Per monitorare la presenza del sito nei risultati di ricerca.
-          </span>
-        </div>
-
-
-        <div class="tool-item">
-          <strong>Sitemap</strong>
-          <span>
-            Per aiutare i motori di ricerca a individuare e comprendere le pagine del sito.
-          </span>
-        </div>
-
-
-        <div class="tool-item">
-          <strong>Contenuti e ottimizzazione</strong>
-          <span>
-            Revisione di testi, titoli, struttura delle pagine e parole chiave,
-            con attenzione agli aspetti base della SEO.
-          </span>
-        </div>
-
-      </div>
-
-
-      <p class="after-closing">
-        Non serve fare tutto subito. Si può partire da ciò che serve davvero
-        e aggiungere il resto nel tempo.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- PRESENZA ONLINE -->
-  <section class="section dark-section presence-section">
-
-    <div class="section-label">Presenza online</div>
-
-    <div class="section-content">
-
-      <h2>
-        Una presenza online<br>
-        non è solo il sito.
-      </h2>
-
-      <div class="presence-text">
-
-        <p>Il sito è una parte del progetto.</p>
-
-        <p>
-          Un sito può essere curato, veloce e funzionare perfettamente.
-          Ma se le informazioni non sono aggiornate, se Google non riesce
-          a leggerlo bene o se sui social comunichi qualcosa di completamente
-          diverso, la tua presenza online perde coerenza.
-        </p>
-
-        <p>Per questo considero insieme:</p>
-
-        <div class="presence-words">
-          <span>SITO</span>
-          <span>GOOGLE</span>
-          <span>SOCIAL</span>
-          <span>CONTENUTI</span>
-        </div>
-
-        <p>
-          Non devono essere identici.<br>
-          <strong>Devono però raccontare la stessa attività.</strong>
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- LAVORO -->
-  <section class="section light-section working-section">
-
-    <div class="section-label">Dopo la pubblicazione</div>
-
-    <div class="section-content">
-
-      <h2>Quanto vuoi essere coinvolto?</h2>
-
-      <div class="working-grid">
-
-        <article class="working-card">
-
-          <span class="working-small">
-            Vuoi fare da solo?
-          </span>
-
-          <h3>
-            Ti lascio una soluzione che puoi gestire.
-          </h3>
-
-          <p>
-            Realizzo il sito, lo pubblico e ti lascio una soluzione
-            che puoi continuare a gestire autonomamente, quando possibile.
-            Ti aiuto a partire nel modo giusto e poi puoi proseguire per conto tuo.
-          </p>
-
-        </article>
-
-
-        <article class="working-card working-card-accent">
-
-          <span class="working-small">
-            Preferisci avere qualcuno che lo segua?
-          </span>
-
-          <h3>
-            Possiamo continuare a lavorare insieme.
-          </h3>
-
-          <p>
-            Aggiornamenti, modifiche, nuovi contenuti o piccoli interventi:
-            in base a ciò che ti serve.
-          </p>
-
-        </article>
-
-      </div>
-
-      <p class="working-closing">
-        Il progetto può finire con la pubblicazione oppure continuare nel tempo.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- PROGETTI -->
-  <section
-    class="section dark-section projects-section"
-    id="progetti"
-  >
-
-    <div class="section-label">Progetti</div>
-
-    <div class="section-content">
-
-      <h2>Alcune cose che ho costruito.</h2>
-
-      <div class="projects-grid">
-
-
-        <article class="project-card">
-
-          <div class="project-image project-image-cats">
-
-            <span class="project-title">
-            SITO WEB · SEO · ANALYTICS
-            </span>
-
-            <div class="project-overlay">
-
-
-              <h3>L'Angolo dei Gatti</h3>
-
-              <p>
-                Progettazione e sviluppo del sito da zero, struttura dei contenuti,
-                design, responsive design, SEO di base, Analytics e pubblicazione.
-              </p>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-        <article class="project-card">
-
-          <div class="project-image project-image-tarsia">
-
-           <span class="project-title">
-            WEB APP · BACKEND · DATABASE
-            </span>
-           
-            <div class="project-overlay">
-
-
-              <h3>Cimitero di Tarsia</h3>
-
-              <p>
-                Sviluppo di una soluzione web personalizzata per la ricerca
-                e consultazione dei dati del cimitero comunale, con frontend,
-                backend, database e funzionalità di ricerca.
-              </p>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FAQ -->
-  <section
-    class="section light-section faq-section"
-    id="faq"
-  >
-
-    <div class="section-label">FAQ</div>
-
-    <div class="section-content">
-
-      <h2>Le domande che arrivano più spesso.</h2>
-
-      <div class="faq-list">
-
-
-        <details class="faq-item">
-
-          <summary>Quanto costa un sito web?</summary>
-
-          <p>
-            Dipende dal tipo di progetto, dal numero di pagine,
-            dalle funzionalità necessarie e dalla soluzione scelta.
-            Prima di parlare di costi è utile capire cosa deve fare il sito.
-          </p>
-
-        </details>
-
-
-        <details class="faq-item">
-
-          <summary>Quanto tempo serve per realizzarlo?</summary>
-
-          <p>
-            Dipende dalla complessità del progetto e da quanto materiale
-            è già disponibile. Un sito semplice può essere realizzato
-            in tempi più brevi, mentre progetti più articolati richiedono
-            più lavoro.
-          </p>
-
-        </details>
-
-
-        <details class="faq-item">
-
-          <summary>Devo avere già dominio e hosting?</summary>
-
-          <p>
-            No. Possiamo occuparci insieme della scelta, dell'acquisto
-            e della configurazione degli strumenti necessari per pubblicare
-            il sito.
-          </p>
-
-        </details>
-
-
-        <details class="faq-item">
-
-          <summary>Posso gestire il sito da solo dopo la pubblicazione?</summary>
-
-          <p>
-            Dipende dalla soluzione scelta. Se vuoi essere autonomo,
-            questo aspetto viene considerato già nella scelta dello strumento
-            e nella realizzazione del progetto. Se invece preferisci,
-            posso continuare a occuparmi degli aggiornamenti e degli interventi
-            di cui hai bisogno.
-          </p>
-
-        </details>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CHI SONO -->
-  <section class="section dark-section about-section">
-
-    <div class="section-label">Chi sono</div>
-
-    <div class="section-content split-content">
-
-      <h2>Sono Anna.</h2>
-
-      <div class="large-text">
-
-        <p>
-          Mi occupo di progetti web e digitali con un approccio pratico.
-        </p>
-
-        <p>
-          Mi piace partire da un'esigenza concreta, capire cosa serve davvero
-          e trasformarla in una soluzione semplice da utilizzare e da gestire.
-        </p>
-
-        <p>
-          Lavoro su siti web, e-commerce e strumenti per la presenza online,
-          scegliendo di volta in volta la soluzione più adatta al progetto.
-        </p>
-
-        <p>
-          Il mio percorso professionale arriva anche da un altro mondo:
-          da anni lavoro nell'amministrazione del personale e nel payroll.
-        </p>
-
-        <p>
-          È un'esperienza che mi ha insegnato precisione, organizzazione,
-          attenzione ai dettagli e soprattutto a trovare soluzioni quando
-          qualcosa non funziona come dovrebbe.
-        </p>
-
-        <p>
-          Nel digitale ho trovato il modo di unire questo approccio
-          alla parte più creativa e progettuale.
-        </p>
-
-        <p class="about-final">
-          Pochi fronzoli.<br>
-          Un progetto alla volta.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTATTI -->
-  <section
-    class="section light-section contact-section"
-    id="contatti"
-  >
-
-    <div class="section-label">Contatto</div>
-
-    <div class="contact-content">
-
-      <h2>
-        Da dove<br>
-        parti?
-      </h2>
-
-      <div class="contact-text">
-
-        <p>
-          Hai già un'attività ma non hai ancora un sito.
-        </p>
-
-        <p>
-          Hai un sito che non ti rappresenta più.
-        </p>
-
-        <p>
-          Vuoi iniziare a vendere online.
-        </p>
-
-        <p>
-          Stai pensando a WordPress o Shopify ma non sai quale strada prendere.
-        </p>
-
-        <p>
-          Oppure hai semplicemente bisogno di mettere ordine
-          nella tua presenza online.
-        </p>
-
-        <p class="contact-final">
-          Raccontami cosa stai cercando.
+        <p class="hero-description">
+          Progetti web e digitali per professionisti, piccole attività e realtà
+          che vogliono costruire o migliorare la propria presenza online.
         </p>
 
         <a
-          href="mailto:bianchi.a.anna@gmail.com"
-          class="contact-button"
+          href="#progetti"
+          class="hero-link"
+          aria-label="Scopri i progetti realizzati da Anna Bianchi"
         >
-          Scrivimi <span>→</span>
+          Scopri i progetti <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+
+      <!-- =================================================
+      ELEMENTO GRAFICO HERO
+      ================================================== -->
+
+      <div class="hero-flow" aria-hidden="true">
+
+        <svg
+          viewBox="0 0 1000 700"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          focusable="false"
+        >
+
+          <!-- LINEA 01 -->
+          <path
+            class="flow-line flow-coral"
+            d="M 0 360 C 130 360, 190 355, 280 350 C 380 344, 410 330, 470 310 C 570 275, 650 290, 760 250 C 850 218, 925 230, 1000 190"
+          />
+
+          <!-- LINEA 02 -->
+          <path
+            class="flow-line flow-blue"
+            d="M 0 360 C 140 360, 205 365, 300 370 C 390 375, 430 400, 510 390 C 620 375, 665 315, 760 330 C 850 345, 920 305, 1000 285"
+          />
+
+          <!-- LINEA 03 -->
+          <path
+            class="flow-line flow-coral"
+            d="M 0 360 C 135 360, 210 350, 300 340 C 390 330, 450 300, 525 325 C 610 355, 670 405, 755 390 C 850 375, 915 410, 1000 385"
+          />
+
+          <!-- LINEA 04 -->
+          <path
+            class="flow-line flow-blue"
+            d="M 0 360 C 130 360, 210 370, 300 385 C 390 400, 450 450, 535 435 C 625 420, 685 355, 770 365 C 855 375, 920 450, 1000 455"
+          />
+
+          <!-- LINEA 05 -->
+          <path
+            class="flow-line flow-coral"
+            d="M 0 360 C 120 360, 200 345, 290 325 C 385 305, 445 275, 520 285 C 610 298, 680 350, 765 315 C 850 280, 920 320, 1000 300"
+          />
+
+          <!-- LINEA 06 -->
+          <path
+            class="flow-line flow-blue"
+            d="M 0 360 C 125 360, 200 375, 290 395 C 380 415, 450 470, 530 465 C 625 460, 690 410, 775 425 C 860 440, 925 510, 1000 520"
+          />
+
+          <!-- LINEA 07 -->
+          <path
+            class="flow-line flow-lavender"
+            d="M 0 360 C 145 360, 215 355, 310 355 C 405 355, 470 345, 550 365 C 650 390, 710 455, 800 440 C 875 425, 940 470, 1000 475"
+          />
+
+          <!-- LINEA 08 -->
+          <path
+            class="flow-line flow-coral"
+            d="M 0 360 C 110 360, 185 342, 270 315 C 365 285, 440 250, 515 265 C 605 283, 675 325, 750 285 C 840 238, 915 270, 1000 235"
+          />
+
+          <!-- LINEA 09 -->
+          <path
+            class="flow-line flow-blue"
+            d="M 0 360 C 115 360, 190 380, 275 410 C 365 442, 440 490, 525 480 C 620 468, 690 435, 770 455 C 860 478, 930 535, 1000 545"
+          />
+
+          <!-- LINEA 10 -->
+          <path
+            class="flow-line flow-lavender"
+            d="M 0 360 C 125 360, 205 348, 295 330 C 390 310, 460 305, 540 330 C 635 360, 700 420, 790 405 C 875 390, 940 420, 1000 410"
+          />
+
+          <!-- LINEA 11 -->
+          <path
+            class="flow-line flow-coral"
+            d="M 0 360 C 105 360, 180 352, 260 338 C 355 322, 425 335, 505 355 C 600 380, 680 380, 765 345 C 850 310, 925 350, 1000 335"
+          />
+
+          <!-- LINEA 12 -->
+          <path
+            class="flow-line flow-blue"
+            d="M 0 360 C 120 360, 205 390, 300 420 C 390 448, 470 455, 550 445 C 645 433, 720 390, 805 420 C 885 448, 950 495, 1000 500"
+          />
+
+        </svg>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+    IL PERCORSO
+    ====================================================== -->
+
+    <section
+      class="story-section"
+      id="percorso"
+      aria-labelledby="story-title"
+    >
+
+      <div class="story-content">
+
+        <div class="section-label">Il percorso</div>
+
+        <h2 id="story-title" class="visually-hidden">
+          Il percorso per costruire la tua presenza online
+        </h2>
+
+
+        <!-- SEGNALIBRI -->
+
+        <div
+          class="story-tabs"
+          role="tablist"
+          aria-label="Il percorso"
+        >
+
+          <button
+            class="story-tab is-active"
+            id="tab-bisogno"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-bisogno"
+            tabindex="0"
+            data-panel="panel-bisogno"
+          >
+            <span class="story-tab-number">01</span>
+            <span class="story-tab-title">Il bisogno</span>
+          </button>
+
+
+          <button
+            class="story-tab"
+            id="tab-soluzione"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-soluzione"
+            tabindex="-1"
+            data-panel="panel-soluzione"
+          >
+            <span class="story-tab-number">02</span>
+            <span class="story-tab-title">La soluzione</span>
+          </button>
+
+
+          <button
+            class="story-tab"
+            id="tab-tecnologia"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-tecnologia"
+            tabindex="-1"
+            data-panel="panel-tecnologia"
+          >
+            <span class="story-tab-number">03</span>
+            <span class="story-tab-title">La tecnologia</span>
+          </button>
+
+
+          <button
+            class="story-tab"
+            id="tab-dopo"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-dopo"
+            tabindex="-1"
+            data-panel="panel-dopo"
+          >
+            <span class="story-tab-number">04</span>
+            <span class="story-tab-title">Il dopo</span>
+          </button>
+
+
+          <button
+            class="story-tab"
+            id="tab-presenza"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-presenza"
+            tabindex="-1"
+            data-panel="panel-presenza"
+          >
+            <span class="story-tab-number">05</span>
+            <span class="story-tab-title">La presenza</span>
+          </button>
+
+
+          <button
+            class="story-tab"
+            id="tab-rapporto"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-rapporto"
+            tabindex="-1"
+            data-panel="panel-rapporto"
+          >
+            <span class="story-tab-number">06</span>
+            <span class="story-tab-title">Il rapporto</span>
+          </button>
+
+        </div>
+
+
+        <!-- =================================================
+        01 IL BISOGNO
+        ================================================== -->
+
+        <div
+          class="story-panel is-active"
+          id="panel-bisogno"
+          role="tabpanel"
+          aria-labelledby="tab-bisogno"
+          tabindex="0"
+        >
+
+          <div class="section-content split-content">
+
+            <h3>
+              Ti serve davvero<br>
+              un sito?
+            </h3>
+
+            <div class="large-text">
+
+              <p>
+                Forse sì.<br>
+                Ma non necessariamente quello che stai immaginando.
+              </p>
+
+              <p>
+                Per qualcuno è sufficiente una pagina chiara con servizi,
+                contatti e informazioni essenziali.
+              </p>
+
+              <p>
+                Per altri serve un sito più completo, un sistema di prenotazione
+                o un e-commerce.
+              </p>
+
+              <p>
+                Il punto non è avere un sito.
+                <strong>
+                  È capire cosa deve fare per la tua attività.
+                </strong>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+        02 LA SOLUZIONE
+        ================================================== -->
+
+        <div
+          class="story-panel"
+          id="panel-soluzione"
+          role="tabpanel"
+          aria-labelledby="tab-soluzione"
+          tabindex="0"
+          hidden
+        >
+
+          <div class="section-content">
+
+            <h3>Da dove vuoi partire?</h3>
+
+            <div class="services-grid">
+
+              <article class="service-card">
+
+                <span class="service-number">01</span>
+
+                <span class="service-type">One page</span>
+
+                <h4>Una presenza semplice</h4>
+
+                <p>
+                  Una pagina unica per presentare un'attività, un professionista,
+                  un servizio o un progetto. Tutto quello che serve, in un unico posto.
+                </p>
+
+              </article>
+
+
+              <article class="service-card">
+
+                <span class="service-number">02</span>
+
+                <span class="service-type">Sito vetrina</span>
+
+                <h4>Un sito più completo</h4>
+
+                <p>
+                  Più pagine per raccontare chi sei, cosa fai, i tuoi servizi,
+                  i tuoi progetti e come contattarti. Una struttura che può crescere
+                  insieme alla tua attività.
+                </p>
+
+              </article>
+
+
+              <article class="service-card">
+
+                <span class="service-number">03</span>
+
+                <span class="service-type">E-commerce</span>
+
+                <h4>Un modo semplice per vendere</h4>
+
+                <p>
+                  Se vuoi vendere prodotti online, possiamo valutare una soluzione
+                  e-commerce adatta al modo in cui lavori.
+                </p>
+
+              </article>
+
+
+              <article class="service-card">
+
+                <span class="service-number">04</span>
+
+                <span class="service-type">Prenotazioni</span>
+
+                <h4>I tuoi clienti devono poter prenotare</h4>
+
+                <p>
+                  Un sito può diventare anche il punto di partenza per raccogliere
+                  richieste e appuntamenti. La soluzione dipende dal tipo di attività
+                  e da come vuoi gestire le prenotazioni.
+                </p>
+
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+        03 LA TECNOLOGIA
+        ================================================== -->
+
+        <div
+          class="story-panel"
+          id="panel-tecnologia"
+          role="tabpanel"
+          aria-labelledby="tab-tecnologia"
+          tabindex="0"
+          hidden
+        >
+
+          <div class="section-content">
+
+            <h3>
+              WordPress, Shopify<br>
+              o una soluzione personalizzata?
+            </h3>
+
+            <p class="section-intro">
+              Non esiste una piattaforma giusta per tutti.
+            </p>
+
+            <div class="technology-list">
+
+              <article class="technology-item">
+
+                <div>
+                  <span>WordPress</span>
+                </div>
+
+                <p>
+                  Una soluzione flessibile per siti che hanno bisogno di contenuti,
+                  pagine e possibilità di gestione nel tempo.
+                </p>
+
+              </article>
+
+
+              <article class="technology-item">
+
+                <div>
+                  <span>Shopify</span>
+                </div>
+
+                <p>
+                  Pensato soprattutto per chi vuole vendere online e avere
+                  una piattaforma e-commerce strutturata e gestibile.
+                </p>
+
+              </article>
+
+
+              <article class="technology-item">
+
+                <div>
+                  <span>Sviluppo personalizzato</span>
+                </div>
+
+                <p>
+                  Quando il progetto ha esigenze specifiche e una soluzione
+                  standard non è sufficiente.
+                </p>
+
+              </article>
+
+            </div>
+
+            <p class="technology-closing">
+              Partiamo da quello che ti serve, non dalla piattaforma.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+        04 IL DOPO
+        ================================================== -->
+
+        <div
+          class="story-panel"
+          id="panel-dopo"
+          role="tabpanel"
+          aria-labelledby="tab-dopo"
+          tabindex="0"
+          hidden
+        >
+
+          <div class="section-content after-content">
+
+            <div class="after-heading">
+
+              <h3>
+                Il sito è online.<br>
+                E poi?
+              </h3>
+
+              <p class="after-intro">
+                Un sito ben fatto è un punto di partenza,
+                non necessariamente il punto di arrivo.
+              </p>
+
+            </div>
+
+
+            <div class="tools-list">
+
+              <div class="tool-item">
+                <strong>Dominio</strong>
+                <span>
+                  Collegamento e configurazione del dominio.
+                </span>
+              </div>
+
+
+              <div class="tool-item">
+                <strong>Google Business Profile</strong>
+                <span>
+                  Per rendere più facile trovare la tua attività su Google.
+                </span>
+              </div>
+
+
+              <div class="tool-item">
+                <strong>Google Analytics</strong>
+                <span>
+                  Per raccogliere dati sulle visite e capire come viene utilizzato il sito.
+                </span>
+              </div>
+
+
+              <div class="tool-item">
+                <strong>Search Console</strong>
+                <span>
+                  Per monitorare la presenza del sito nei risultati di ricerca.
+                </span>
+              </div>
+
+
+              <div class="tool-item">
+                <strong>Sitemap</strong>
+                <span>
+                  Per aiutare i motori di ricerca a individuare e comprendere le pagine del sito.
+                </span>
+              </div>
+
+
+              <div class="tool-item">
+                <strong>Contenuti e ottimizzazione</strong>
+                <span>
+                  Revisione di testi, titoli, struttura delle pagine e parole chiave,
+                  con attenzione agli aspetti base della SEO.
+                </span>
+              </div>
+
+            </div>
+
+
+            <p class="after-closing">
+              Non serve fare tutto subito. Si può partire da ciò che serve davvero
+              e aggiungere il resto nel tempo.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+        05 LA PRESENZA
+        ================================================== -->
+
+        <div
+          class="story-panel"
+          id="panel-presenza"
+          role="tabpanel"
+          aria-labelledby="tab-presenza"
+          tabindex="0"
+          hidden
+        >
+
+          <div class="section-content">
+
+            <h3>
+              Una presenza online<br>
+              non è solo il sito.
+            </h3>
+
+            <div class="presence-text">
+
+              <p>
+                Il sito è una parte del progetto.
+              </p>
+
+              <p>
+                Un sito può essere curato, veloce e funzionare perfettamente.
+                Ma se le informazioni non sono aggiornate, se Google non riesce
+                a leggerlo bene o se sui social comunichi qualcosa di completamente
+                diverso, la tua presenza online perde coerenza.
+              </p>
+
+              <p>
+                Per questo considero insieme:
+              </p>
+
+              <div
+                class="presence-words"
+                aria-label="Elementi della presenza online"
+              >
+                <span>SITO</span>
+                <span>GOOGLE</span>
+                <span>SOCIAL</span>
+                <span>CONTENUTI</span>
+              </div>
+
+              <p>
+                Non devono essere identici.<br>
+                <strong>
+                  Devono però raccontare la stessa attività.
+                </strong>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+        06 IL RAPPORTO
+        ================================================== -->
+
+        <div
+          class="story-panel"
+          id="panel-rapporto"
+          role="tabpanel"
+          aria-labelledby="tab-rapporto"
+          tabindex="0"
+          hidden
+        >
+
+          <div class="section-content">
+
+            <h3>Quanto vuoi essere coinvolto?</h3>
+
+            <div class="working-grid">
+
+              <article class="working-card">
+
+                <span class="working-small">
+                  Vuoi fare da solo?
+                </span>
+
+                <h4>
+                  Ti lascio una soluzione che puoi gestire.
+                </h4>
+
+                <p>
+                  Realizzo il sito, lo pubblico e ti lascio una soluzione
+                  che puoi continuare a gestire autonomamente, quando possibile.
+                  Ti aiuto a partire nel modo giusto e poi puoi proseguire per conto tuo.
+                </p>
+
+              </article>
+
+
+              <article class="working-card working-card-accent">
+
+                <span class="working-small">
+                  Preferisci avere qualcuno che lo segua?
+                </span>
+
+                <h4>
+                  Possiamo continuare a lavorare insieme.
+                </h4>
+
+                <p>
+                  Aggiornamenti, modifiche, nuovi contenuti o piccoli interventi:
+                  in base a ciò che ti serve.
+                </p>
+
+              </article>
+
+            </div>
+
+
+            <p class="working-closing">
+              Il progetto può finire con la pubblicazione oppure continuare nel tempo.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+    PROGETTI
+    ====================================================== -->
+
+    <section
+      class="section dark-section projects-section"
+      id="progetti"
+      aria-labelledby="projects-title"
+    >
+
+      <div class="section-label">Progetti</div>
+
+      <div class="section-content">
+
+        <h2 id="projects-title">Alcune cose che ho costruito.</h2>
+
+        <div class="projects-grid">
+
+
+          <!-- PROGETTO L'ANGOLO DEI GATTI -->
+
+          <article class="project-card">
+
+            <div
+              class="project-image project-image-cats"
+            >
+
+              <img
+                src="assets/img/Ldg.png"
+                alt="Anteprima del sito web L'Angolo dei Gatti"
+              >
+
+              <span class="project-title">
+                SITO WEB · SEO · ANALYTICS
+              </span>
+
+              <div class="project-overlay">
+
+                <h3>L'Angolo dei Gatti</h3>
+
+                <p>
+                  Progettazione e sviluppo del sito da zero, struttura dei contenuti,
+                  design, responsive design, SEO di base, Analytics e pubblicazione.
+                </p>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROGETTO CIMITERO DI TARSIA -->
+
+          <article class="project-card">
+
+            <div
+              class="project-image project-image-tarsia"
+            >
+
+              <img
+                src="assets/img/Tarsia.png"
+                alt="Anteprima del progetto web Cimitero di Tarsia"
+              >
+
+              <span class="project-title">
+                WEB APP · BACKEND · DATABASE
+              </span>
+
+              <div class="project-overlay">
+
+                <h3>Cimitero di Tarsia</h3>
+
+                <p>
+                  Sviluppo di una soluzione web personalizzata per la ricerca
+                  e consultazione dei dati del cimitero comunale, con frontend,
+                  backend, database e funzionalità di ricerca.
+                </p>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+    FAQ
+    ====================================================== -->
+
+    <section
+      class="section light-section faq-section"
+      id="faq"
+      aria-labelledby="faq-title"
+    >
+
+      <div class="section-label">FAQ</div>
+
+      <div class="section-content">
+
+        <h2 id="faq-title">Le domande che arrivano più spesso.</h2>
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary>Quanto costa un sito web?</summary>
+
+            <p>
+              Dipende dal tipo di progetto, dal numero di pagine,
+              dalle funzionalità necessarie e dalla soluzione scelta.
+              Prima di parlare di costi è utile capire cosa deve fare il sito.
+            </p>
+          </details>
+
+
+          <details class="faq-item">
+            <summary>Quanto tempo serve per realizzarlo?</summary>
+
+            <p>
+              Dipende dalla complessità del progetto e da quanto materiale
+              è già disponibile. Un sito semplice può essere realizzato
+              in tempi più brevi, mentre progetti più articolati richiedono
+              più lavoro.
+            </p>
+          </details>
+
+
+          <details class="faq-item">
+            <summary>Devo avere già dominio e hosting?</summary>
+
+            <p>
+              No. Possiamo occuparci insieme della scelta, dell'acquisto
+              e della configurazione degli strumenti necessari per pubblicare
+              il sito.
+            </p>
+          </details>
+
+
+          <details class="faq-item">
+            <summary>Posso gestire il sito da solo dopo la pubblicazione?</summary>
+
+            <p>
+              Dipende dalla soluzione scelta. Se vuoi essere autonomo,
+              questo aspetto viene considerato già nella scelta dello strumento
+              e nella realizzazione del progetto. Se invece preferisci,
+              posso continuare a occuparmi degli aggiornamenti e degli interventi
+              di cui hai bisogno.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+    CHI SONO
+    ====================================================== -->
+
+    <section
+      class="section dark-section about-section"
+      aria-labelledby="about-title"
+    >
+
+      <div class="section-label">Chi sono</div>
+
+      <div class="section-content split-content">
+
+        <h2 id="about-title">Sono Anna.</h2>
+
+        <div class="large-text">
+
+          <p>
+            Mi occupo di progetti web e digitali con un approccio pratico.
+          </p>
+
+          <p>
+            Mi piace partire da un'esigenza concreta, capire cosa serve davvero
+            e trasformarla in una soluzione semplice da utilizzare e da gestire.
+          </p>
+
+          <p>
+            Lavoro su siti web, e-commerce e strumenti per la presenza online,
+            scegliendo di volta in volta la soluzione più adatta al progetto.
+          </p>
+
+          <p>
+            Il mio percorso professionale arriva anche da un altro mondo:
+            da anni lavoro nell'amministrazione del personale e nel payroll.
+          </p>
+
+          <p>
+            È un'esperienza che mi ha insegnato precisione, organizzazione,
+            attenzione ai dettagli e soprattutto a trovare soluzioni quando
+            qualcosa non funziona come dovrebbe.
+          </p>
+
+          <p>
+            Nel digitale ho trovato il modo di unire questo approccio
+            alla parte più creativa e progettuale.
+          </p>
+
+          <p class="about-final">
+            Pochi fronzoli.<br>
+            Un progetto alla volta.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+    CONTATTI
+    ====================================================== -->
+
+    <section
+      class="section light-section contact-section"
+      id="contatti"
+      aria-labelledby="contact-title"
+    >
+
+      <div class="section-label">Contatto</div>
+
+      <div class="contact-content">
+
+        <h2 id="contact-title">
+          Da dove<br>
+          parti?
+        </h2>
+
+        <div class="contact-text">
+
+          <p>
+            Hai già un'attività ma non hai ancora un sito.
+          </p>
+
+          <p>
+            Hai un sito che non ti rappresenta più.
+          </p>
+
+          <p>
+            Vuoi iniziare a vendere online.
+          </p>
+
+          <p>
+            Stai pensando a WordPress o Shopify ma non sai quale strada prendere.
+          </p>
+
+          <p>
+            Oppure hai semplicemente bisogno di mettere ordine
+            nella tua presenza online.
+          </p>
+
+          <p class="contact-final">
+            Raccontami cosa stai cercando.
+          </p>
+
+          <a
+            href="mailto:bianchi.a.anna@gmail.com"
+            class="contact-button"
+            aria-label="Scrivi un'email ad Anna Bianchi"
+          >
+            Scrivimi <span aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ELEMENTO GRAFICO DECORATIVO -->
+
+      <div class="contact-lines" aria-hidden="true">
+
+        <svg
+          viewBox="0 0 1000 300"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          focusable="false"
+        >
+
+          <path
+            d="M0 230 C150 210 180 120 330 145 C470 170 470 270 610 220 C750 170 770 60 1000 85"
+          />
+
+          <path
+            d="M0 255 C140 235 200 155 340 175 C470 195 490 290 625 240 C760 190 820 95 1000 110"
+          />
+
+          <path
+            d="M0 275 C130 255 220 185 350 205 C480 225 500 305 640 260 C790 210 850 130 1000 135"
+          />
+
+        </svg>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+  FOOTER
+  ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <strong>Anna Bianchi</strong>
+        <span>Progetti web e digitali</span>
+      </div>
+
+      <div class="footer-services">
+        Siti web · E-commerce · WordPress · Shopify · Presenza online
+      </div>
+
+      <div class="footer-links">
+
+        <a
+          href="https://www.linkedin.com/in/anna-adriana-bianchi-ab6364b8/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visita il profilo LinkedIn di Anna Bianchi"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="mailto:bianchi.a.anna@gmail.com"
+          aria-label="Invia un'email ad Anna Bianchi"
+        >
+          Email
         </a>
 
       </div>
 
     </div>
 
-    <div class="contact-lines" aria-hidden="true">
-
-      <svg
-        viewBox="0 0 1000 300"
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-
-        <path
-          d="M0 230 C150 210 180 120 330 145 C470 170 470 270 610 220 C750 170 770 60 1000 85"
-        />
-
-        <path
-          d="M0 255 C140 235 200 155 340 175 C470 195 490 290 625 240 C760 190 820 95 1000 110"
-        />
-
-        <path
-          d="M0 275 C130 255 220 185 350 205 C480 225 500 305 640 260 C790 210 850 130 1000 135"
-        />
-
-      </svg>
-
+    <div class="footer-bottom">
+      © <span id="current-year"></span> Anna Bianchi
     </div>
 
-  </section>
-
-</main>
-
-
-<!-- FOOTER -->
-<footer class="site-footer">
-
-  <div class="footer-main">
-
-    <div class="footer-brand">
-      <strong>Anna Bianchi</strong>
-      <span>Progetti web e digitali</span>
-    </div>
-
-    <div class="footer-services">
-      Siti web · E-commerce · WordPress · Shopify · Presenza online
-    </div>
-
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/anna-adriana-bianchi-ab6364b8/" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        aria-label="LinkedIn">
-        LinkedIn
-        </a>
-      <a href="mailto:bianchi.a.anna@gmail.com">Email</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    © <span id="current-year"></span> Anna Bianchi
-  </div>
-
-</footer>
+  </footer>
 
 </body>
 </html>
