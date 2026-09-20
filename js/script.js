@@ -117,23 +117,34 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
 
-      /* =====================================================
-      SCROLL AUTOMATICO DEI TAB SU MOBILE
-      ===================================================== */
+  /* =====================================================
+    SCROLL DEI TAB SU MOBILE
+    ===================================================== */
 
-      if (
-        window.innerWidth <= 768 &&
-        storyTabs.length > 1
-      ) {
+    if (
+    window.innerWidth <= 768 &&
+    storyTabs.length > 1
+    ) {
 
-        tab.scrollIntoView({
-          behavior: "smooth",
-          inline: "center",
-          block: "nearest"
+    const tabsContainer = tab.parentElement;
+
+    if (tabsContainer) {
+
+        const tabLeft = tab.offsetLeft;
+        const tabWidth = tab.offsetWidth;
+        const containerWidth = tabsContainer.clientWidth;
+
+        const targetScroll =
+        tabLeft - (containerWidth - tabWidth) / 2;
+
+        tabsContainer.scrollTo({
+        left: Math.max(0, targetScroll),
+        behavior: "smooth"
         });
 
-      }
+    }
 
+    }
 
       /* Accessibilità */
 
